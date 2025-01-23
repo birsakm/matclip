@@ -1,0 +1,78 @@
+<div class="item">
+  <div class="media-container">
+    <img src="static/images/flux/flux/0c_0b8_00033.jpg" class="media-item" />
+    <img src="static/images/flux/ours/0c_0b8_00033.jpg" class="media-item" /> 
+  </div>
+</div>
+<div class="item">
+  <div class="media-container">
+    <img src="static/images/flux/flux/0c_187_00021.jpg" class="media-item" />
+    <img src="static/images/flux/ours/0c_187_00021.jpg" class="media-item" /> 
+  </div>
+</div>
+<div class="item">
+  <div class="media-container">
+    <img src="static/images/flux/flux/0c_214_00001.jpg" class="media-item" />
+    <img src="static/images/flux/ours/0c_214_00001.jpg" class="media-item" /> 
+  </div>
+</div>
+<div class="item">
+  <div class="media-container">
+    <img src="static/images/flux/flux/0c_359_00039.jpg" class="media-item" />
+    <img src="static/images/flux/ours/0c_359_00039.jpg" class="media-item" /> 
+  </div>
+</div>
+<div class="item">
+  <div class="media-container">
+    <img src="static/images/flux/flux/0c_396_00038.jpg" class="media-item" />
+    <img src="static/images/flux/ours/0c_396_00038.jpg" class="media-item" /> 
+  </div>
+</div>
+<div class="item">
+  <div class="media-container">
+    <img src="static/images/flux/flux/0c_0ad_00008.jpg" class="media-item" />
+    <img src="static/images/flux/ours/0c_0ad_00008.jpg" class="media-item" /> 
+  </div>
+</div>
+<div class="item">
+  <div class="media-container">
+    <img src="static/images/flux/flux/0c_1b4_00040.jpg" class="media-item" />
+    <img src="static/images/flux/ours/0c_1b4_00040.jpg" class="media-item" /> 
+  </div>
+</div>
+<div class="item">
+  <div class="media-container">
+    <img src="static/images/flux/flux/0c_3bc_00027.jpg" class="media-item" />
+    <img src="static/images/flux/ours/0c_3bc_00027.jpg" class="media-item" /> 
+  </div>
+</div>
+<div class="item">
+  <div class="media-container">
+    <img src="static/images/flux/flux/0c_42c_00039.jpg" class="media-item" />
+    <img src="static/images/flux/ours/0c_42c_00039.jpg" class="media-item" /> 
+  </div>
+</div>
+<div class="item">
+  <div class="media-container">
+    <img src="static/images/flux/flux/0c_42c_00042.jpg" class="media-item" />
+    <img src="static/images/flux/ours/0c_42c_00042.jpg" class="media-item" /> 
+  </div>
+</div>
+<div class="item">
+  <div class="media-container">
+    <img src="static/images/flux/flux/0c_0c4_00022.jpg" class="media-item" />
+    <img src="static/images/flux/ours/0c_0c4_00022.jpg" class="media-item" /> 
+  </div>
+</div>
+<div class="item">
+  <div class="media-container">
+    <img src="static/images/flux/flux/0c_0fd_00047.jpg" class="media-item" />
+    <img src="static/images/flux/ours/0c_0fd_00047.jpg" class="media-item" /> 
+  </div>
+</div>
+<div class="item">
+  <div class="media-container">
+    <img src="static/images/flux/flux/0c_2ae_00058.jpg" class="media-item" />
+    <img src="static/images/flux/ours/0c_2ae_00058.jpg" class="media-item" /> 
+  </div>
+</div>

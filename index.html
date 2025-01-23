@@ -219,9 +219,6 @@
 -->
 <!-- End image carousel -->
 
-
-
-
 <!-- Youtube video -->
 <!--
 <section class="hero is-small is-light">
@@ -244,21 +241,6 @@
 -->
 <!-- End youtube video -->
 
-<!--
-"E:\matclip\static\videos\.mp4"
-"E:\matclip\static\videos\.mp4"
-"E:\matclip\static\videos\.mp4"
-"E:\matclip\static\videos\.mp4"
-"E:\matclip\static\videos\.mp4"
-"E:\matclip\static\videos\.mp4"
-"E:\matclip\static\videos\.mp4"
-"E:\matclip\static\videos\.mp4"
-"E:\matclip\static\videos\.mp4"
-"E:\matclip\static\videos\.mp4"
-"E:\matclip\static\videos\.mp4"
-"E:\matclip\static\videos\.mp4"
--->
-
 <!-- OVERVIEW -->
 <section class="hero is-small">
   <div class="hero-body">
@@ -268,16 +250,28 @@
         class="fit-picture"
         src="static/images/overview.jpg"
         alt="Grapefruit slice atop a pile of other slices" />
+
+        <h2 class="subtitle has-text-centered">
+          (left) Our method learns robust material descriptors through diverse renderings across geometric shapes and lighting conditions. (bottom center)
+          MatCLIP aligns material embeddings with corresponding parts of 3D objects using cosine similarity and attention mechanisms. (right) We train our MatCLIP
+          model using a large dataset of masked renderings. (top center) We leverage the output from LDMs (e.g., Stable Diffusion) to obtain meaningful material
+          assignments to untextured shape collections.
+        </h2>
     </div>
   </div>
 </section>
 
-<!-- RESULTS -->
+<!-- RESULT VIDEOS-->
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Results</h2>
+      <h2 class="title is-3">Result Videos</h2>
+      We conduct qualitative evaluations using outputs from FLUX to assess MatCLIP's ability to generalize beyond the closed set of training materials.
+      These evaluations focus on assigning materials to synthetic target images generated using depth, edge, and text conditioning, as described. Our model selects
+      the best-matching material from the MatSynth database for each target image, producing visually
+      coherent and contextually appropriate assignments, even for complex shapes and lighting conditions.
+
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <div class="media-container">
@@ -372,6 +366,275 @@
   </div>
 </section>
 <!-- End video carousel -->
+
+<!-- RESULT IMAGES - FLUX -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Result Images (FLUX)</h2>
+      For each example, the left image is the output image from FLUX, the right image shows a rendering of the corresponding shape with materials assigned by our MatCLIP model.
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/flux/flux/0c_0b8_00033.jpg" class="media-item" />
+            <img src="static/images/flux/ours/0c_0b8_00033.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/flux/flux/0c_187_00021.jpg" class="media-item" />
+            <img src="static/images/flux/ours/0c_187_00021.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/flux/flux/0c_214_00001.jpg" class="media-item" />
+            <img src="static/images/flux/ours/0c_214_00001.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/flux/flux/0c_359_00039.jpg" class="media-item" />
+            <img src="static/images/flux/ours/0c_359_00039.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/flux/flux/0c_396_00038.jpg" class="media-item" />
+            <img src="static/images/flux/ours/0c_396_00038.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/flux/flux/0c_0ad_00008.jpg" class="media-item" />
+            <img src="static/images/flux/ours/0c_0ad_00008.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/flux/flux/0c_1b4_00040.jpg" class="media-item" />
+            <img src="static/images/flux/ours/0c_1b4_00040.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/flux/flux/0c_3bc_00027.jpg" class="media-item" />
+            <img src="static/images/flux/ours/0c_3bc_00027.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/flux/flux/0c_42c_00039.jpg" class="media-item" />
+            <img src="static/images/flux/ours/0c_42c_00039.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/flux/flux/0c_42c_00042.jpg" class="media-item" />
+            <img src="static/images/flux/ours/0c_42c_00042.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/flux/flux/0c_0c4_00022.jpg" class="media-item" />
+            <img src="static/images/flux/ours/0c_0c4_00022.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/flux/flux/0c_0fd_00047.jpg" class="media-item" />
+            <img src="static/images/flux/ours/0c_0fd_00047.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/flux/flux/0c_2ae_00058.jpg" class="media-item" />
+            <img src="static/images/flux/ours/0c_2ae_00058.jpg" class="media-item" /> 
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- RESULT IMAGES - STABLE DIFFUSION -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Result Images (Stable Diffusion)</h2>
+      For each example, the left image is the output image from Stable Diffusion, the right image shows a rendering of the corresponding shape with materials assigned by our MatCLIP model.
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_1b4_00026.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_1b4_00026.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_1b3_00002.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_1b3_00002.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_20b_00002.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_20b_00002.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_0db_00025.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_0db_00025.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_359_00010.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_359_00010.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_0f8_00022.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_0f8_00022.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_16a_00000.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_16a_00000.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_1d0_00020.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_1d0_00020.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_438_00042.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_438_00042.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_1ed_00011.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_1ed_00011.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_088_00024.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_088_00024.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_0f8_00028.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_0f8_00028.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_15d_00019.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_15d_00019.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_00d_00006.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_00d_00006.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_024_00027.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_024_00027.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_2ac_00025.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_2ac_00025.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_20b_00024.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_20b_00024.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_0ad_00052.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_0ad_00052.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_176_00040.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_176_00040.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_178_00010.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_178_00010.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_396_00033.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_396_00033.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_0b8_00036.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_0b8_00036.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_1a7_00056.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_1a7_00056.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_1fe_00061.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_1fe_00061.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_0c4_00040.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_0c4_00040.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_015_00048.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_015_00048.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_432_00026.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_432_00026.jpg" class="media-item" /> 
+          </div>
+        </div>
+        <div class="item">
+          <div class="media-container">
+            <img src="static/images/stable_diffusion/stable_diffusion/0c_0fd_00047.jpg" class="media-item" />
+            <img src="static/images/stable_diffusion/ours/0c_0fd_00047.jpg" class="media-item" /> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- LIMITATIONS -->
 <!-- Video carousel -->
