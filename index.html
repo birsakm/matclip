@@ -20,11 +20,11 @@
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="PBR Materials, AlphaCLIP, Latent Diffusion, Transformer, Material Descriptor">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>MatCLIP</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,28 +52,35 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">MatCLIP: Light- and Shape-Insensitive Assignment of PBR Material Models</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <span class="author-block">Anonymous Authors</span>
+                <!--
+                <span class="author-block">
+                  <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
                 <span class="author-block">
                   <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
-
+                <span class="author-block">
+                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                </span>
+                -->
+                
+                </div>
+                  
+                  <!-- 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">Institution Name<br>Conferance name and year</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
+                  -->
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
+                      <!-- https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="./index.html" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -83,8 +90,10 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
+                    <!--
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      static/pdfs/supplementary_material.pdf
+                      <a href="./index.html" target="_blank" 
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -92,10 +101,12 @@
                       <span>Supplementary</span>
                     </a>
                   </span>
+                  -->
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <!-- https://github.com/YOUR REPO HERE -->
+                    <a href="./index.html" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -105,6 +116,7 @@
                 </span>
 
                 <!-- ArXiv abstract Link -->
+                <!--
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
@@ -112,6 +124,7 @@
                     <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
+                -->
                 </a>
               </span>
             </div>
@@ -127,13 +140,20 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
+      <img
+        class="fit-picture"
+        src="static/images/teaser.jpg"
+        alt="Grapefruit slice atop a pile of other slices" />
+      <!--
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
+      -->
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        (Left) Latent Diffusion Models (LDMs) are a powerful tool to obtain good material assignments, but the output is RGB only. (Middle) Our MatCLIP
+        model robustly matches a PBR material from a material database to each part of the shape. (Right) By comparison, procedurally assigning PBR materials from
+        meaningful substance categories to 3D shapes yields unconvincing results.
       </h2>
     </div>
   </div>
@@ -148,7 +168,11 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Assigning realistic materials to 3D models remains a significant challenge in computer graphics. 
+            We propose MatCLIP, a novel method that extracts shape- and lighting-insensitive descriptors of Physically Based Rendering (PBR) materials to assign plausible textures to 3D objects based on images, such as the output of Latent Diffusion Models (LDMs) or photographs.
+            Matching PBR materials to static images is challenging because the PBR representation captures the dynamic appearance of materials under varying viewing angles, shapes, and lighting conditions. 
+            By extending an AlphaCLIP-based model on material renderings across diverse shapes and lighting, and encoding multiple viewing conditions for PBR materials, our approach generates descriptors that bridge the domains of PBR representations with photographs or renderings, including LDM outputs. This enables consistent material assignments without requiring explicit knowledge of material relationships between different parts of an object.
+            MatCLIP achieves a top-1 classification accuracy of 76.6\%, outperforming state-of-the-art methods such as PhotoShape and MatAtlas by over 15 percentage points on publicly available datasets. Our method can be used to construct material assignments for 3D shape datasets such as ShapeNet, 3DCoMPaT++, and Objaverse.
           </p>
         </div>
       </div>
@@ -159,33 +183,30 @@
 
 
 <!-- Image carousel -->
+<!--
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
      <div class="item">
-      <!-- Your image here -->
       <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
@@ -195,22 +216,24 @@
 </div>
 </div>
 </section>
+-->
 <!-- End image carousel -->
 
 
 
 
 <!-- Youtube video -->
+<!--
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
+      
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
+
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
@@ -218,36 +241,128 @@
     </div>
   </div>
 </section>
+-->
 <!-- End youtube video -->
 
+<!--
+"E:\matclip\static\videos\.mp4"
+"E:\matclip\static\videos\.mp4"
+"E:\matclip\static\videos\.mp4"
+"E:\matclip\static\videos\.mp4"
+"E:\matclip\static\videos\.mp4"
+"E:\matclip\static\videos\.mp4"
+"E:\matclip\static\videos\.mp4"
+"E:\matclip\static\videos\.mp4"
+"E:\matclip\static\videos\.mp4"
+"E:\matclip\static\videos\.mp4"
+"E:\matclip\static\videos\.mp4"
+"E:\matclip\static\videos\.mp4"
+-->
 
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Results</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+          <div class="media-container">
+            <img src="static/images/0c_0c4_00022.jpg" alt="MY ALT TEXT" class="media-item" />
+            <video poster="" id="video1" autoplay controls muted loop class="media-item">
+              <source src="static/videos/0c_0c4_00022.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
+        <div class="item item-video1">
+          <div class="media-container">
+            <img src="static/images/0c_0f8_00033.jpg" alt="MY ALT TEXT" class="media-item" />
+            <video poster="" id="video1" autoplay controls muted loop class="media-item">
+              <source src="static/videos/0c_0f8_00033.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+        <div class="item item-video1">
+          <div class="media-container">
+            <img src="static/images/0c_2ac_00020.jpg" alt="MY ALT TEXT" class="media-item" />
+            <video poster="" id="video1" autoplay controls muted loop class="media-item">
+              <source src="static/videos/0c_2ac_00020.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
+        <div class="item item-video1">
+          <div class="media-container">
+            <img src="static/images/0c_3bc_00027.jpg" alt="MY ALT TEXT" class="media-item" />
+            <video poster="" id="video1" autoplay controls muted loop class="media-item">
+              <source src="static/videos/0c_3bc_00027.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="item item-video1">
+          <div class="media-container">
+            <img src="static/images/0c_3c7_00015.jpg" alt="MY ALT TEXT" class="media-item" />
+            <video poster="" id="video1" autoplay controls muted loop class="media-item">
+              <source src="static/videos/0c_3c7_00015.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="item item-video1">
+          <div class="media-container">
+            <img src="static/images/0c_3e3_00062.jpg" alt="MY ALT TEXT" class="media-item" />
+            <video poster="" id="video1" autoplay controls muted loop class="media-item">
+              <source src="static/videos/0c_3e3_00062.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="item item-video1">
+          <div class="media-container">
+            <img src="static/images/0c_16a_00039.jpg" alt="MY ALT TEXT" class="media-item" />
+            <video poster="" id="video1" autoplay controls muted loop class="media-item">
+              <source src="static/videos/0c_16a_00039.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="item item-video1">
+          <div class="media-container">
+            <img src="static/images/0c_42c_00039.jpg" alt="MY ALT TEXT" class="media-item" />
+            <video poster="" id="video1" autoplay controls muted loop class="media-item">
+              <source src="static/videos/0c_42c_00039.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="item item-video1">
+          <div class="media-container">
+            <img src="static/images/0c_048_00022.jpg" alt="MY ALT TEXT" class="media-item" />
+            <video poster="" id="video1" autoplay controls muted loop class="media-item">
+              <source src="static/videos/0c_048_00022.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="item item-video1">
+          <div class="media-container">
+            <img src="static/images/0c_187_00021.jpg" alt="MY ALT TEXT" class="media-item" />
+            <video poster="" id="video1" autoplay controls muted loop class="media-item">
+              <source src="static/videos/0c_187_00021.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="item item-video1">
+          <div class="media-container">
+            <img src="static/images/0c_359_00039.jpg" alt="MY ALT TEXT" class="media-item" />
+            <video poster="" id="video1" autoplay controls muted loop class="media-item">
+              <source src="static/videos/0c_359_00039.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="item item-video1">
+          <div class="media-container">
+            <img src="static/images/0c_396_00057.jpg" alt="MY ALT TEXT" class="media-item" />
+            <video poster="" id="video1" autoplay controls muted loop class="media-item">
+              <source src="static/videos/0c_396_00057.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        
       </div>
     </div>
   </div>
@@ -260,6 +375,7 @@
 
 
 <!-- Paper poster -->
+<!--
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
@@ -271,6 +387,7 @@
       </div>
     </div>
   </section>
+-->
 <!--End paper poster -->
 
 
@@ -278,7 +395,14 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>
+        @article{matclip2025
+          author    = {Anonymous Authors},
+          title     = {MatCLIP: Light- and Shape-Insensitive Assignment of PBR Material Models},
+          journal   = {Unpublished},
+          year      = {2025},
+        }
+      </code></pre>
     </div>
 </section>
 <!--End BibTex citation -->

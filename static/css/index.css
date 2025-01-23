@@ -133,5 +133,14 @@ body {
   font-size: smaller;
 }
 
+.media-container {
+  display: flex; /* Use Flexbox to arrange items in a row */
+  gap: 10px; /* Add a small gap between the image and the video */
+  align-items: center; /* Align items vertically */
+}
 
-
+.media-item {
+  width: 50%; /* Make the image and video take up equal width */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: cover; /* Ensure content fits nicely within bounds */
+}
